@@ -10,7 +10,7 @@
 				initial-scale=1.0">
 	<title>Employee Dashboard</title>
 	<link rel="stylesheet"
-		href="settings.css">
+		href="adminstyles.css">
 	<link rel="stylesheet"
 		href="resp.css">
 </head>
@@ -62,14 +62,14 @@
 					<div class="nav-option option2">
 						<img src="https://cdn-icons-png.flaticon.com/512/4345/4345573.png"
 							class="nav-img"
-							alt="report"width="30" height="45">
-						<h3><a href="assigntasks.html">Assign Tasks</a></h2> </h3>
+							alt="Assign tasks"width="30" height="45">
+						<h3><a href="assigntasks.html">Assigned Tasks</a></h2> </h3>
 					</div>
 
                                         <div class="nav-option option3">
 						<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NXUJb3Ep2kmjVgBv_J9uLnGPis45kLC7_g&usqp=CAU"
-                                                        class="nav-img"
-							alt="blog" width="45" height="35">
+							class="nav-img"
+							alt="Profile" width="45" height="35">
 						<h3><a href="profile.html">Profile</a></h2> </h3>
 					</div>
                                         
@@ -80,8 +80,7 @@
 						<h3><a href="settings.html">Settings</a></h2> </h3>
 					</div>
 
-					
-					<div class="nav-option option5">
+					<div class="nav-option logout">
 						<img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"
 							class="nav-img"
 							alt="logout" width="40" height="40">
@@ -92,47 +91,44 @@
 			</nav>
 		</div>
 		<div class="main">
-                         <form>
-        <section class="settings-section">
-    <h2>Settings</h2>
-    
-    <div class="settings-option">
-        <label for="select">Select Theme:</label><br>
-        <select id="select" name="theme">
-            <option value="light">Light Theme</option>
-            <option value="dark">Dark Theme</option>
-        </select><br><br>
-    </div>
-    
-    <div class="settings-option">
-        <input type="checkbox" id="notif" name="notif">
-        <label for="notif">Receive Notifications</label><br><br>
-    </div>
-    
-    <div class="settings-option">
-        <label for="language">Select Language:</label><br>
-        <select id="language" name="language">
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-            <option value="french">French</option>
-        </select><br><br>
-    </div>
-    
-    <button onclick="saveSettings()">Save Settings</button>
-</section>
 
-<script>
-    function saveSettings() {
-        // Logic to save settings, can be implemented using JavaScript
-        // For demonstration purposes, you can alert or console log the selected settings
-        const selectedTheme = document.getElementById('theme-select').value;
-        const receiveNotifications = document.getElementById('notifications').checked;
-        const selectedLanguage = document.getElementById('language-select').value;
+			<div class="box-container">
 
-        alert(Settings Saved:\nTheme: ${selectedTheme}\nNotifications: ${receiveNotifications}\nLanguage: ${selectedLanguage});
-    }
-</script>
-        </form>
+				<div class="box box1">
+					<div class="text">
+						<h2 class="topic-heading"><a href="contact.html">Contacts</a></h2> 
+					</div>
+
+					<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/contact-info-2535141-2126247.png"
+						alt="Contact">
+				</div>
+
+				<div class="box box2">
+					<div class="text">
+						<h2 class="topic-heading"><a href="financialrecords.html">Financial Records</a></h2> 
+					</div>
+
+					<img src="https://cdn.iconscout.com/icon/free/png-256/free-financial-statement-2165302-1827436.png"
+						alt="Financial Records">
+				</div>
+                             
+                                <div class="box box3">
+					<div class="text">
+						<h2 class="topic-heading"><a href="bonus.html">Bonus</a></h2> 
+					</div>
+
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvrg749kiSM2n_Od0nMwVOHCPSbUC-zK0hA&usqp=CAU"
+						alt="Bonuses">
+				</div>
+
+				<div class="box box4">
+					<div class="text">
+						<h2 class="topic-heading"><a href="copyrights.html">Copyrights</a></h2> 
+					</div>
+
+					<img src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/171f17ef-db36-42d1-791a-a493dfdb3d00/thumbnail"alt="Copyrights">
+				</div>
+                                
 			</div>
 </body>
 </html>
